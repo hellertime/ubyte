@@ -77,6 +77,7 @@ impl<T: Into<ByteUnit>> Shr<T> for ByteUnit {
     }
 }
 
+impl ::core::marker::StructuralPartialEq for ByteUnit {}
 impl<T: Into<ByteUnit> + Copy> PartialEq<T> for ByteUnit {
     fn eq(&self, other: &T) -> bool {
         self.0 == (*other).into().0
