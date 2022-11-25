@@ -1,4 +1,5 @@
 #![no_std]
+#![feature(structural_match)]
 
 //! A simple, complete, `const`-everything, saturating, human-friendly,
 //! `#![no_std]` library for byte units.
